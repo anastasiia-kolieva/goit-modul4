@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    width: 1110px;
+    margin: 0 auto;
+    /* margin 0auto не применяется, не центрируется весь body, в девтулзах видно что нормлайз margin перебивает */
+}
+
+header {
+    height: 160px;
+    width: 1110px;
+}
+
+.clearfix::after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+    color: #555252;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 34px 0 100px 0;
+    float: left;
+}
+
+p {
+    margin: 0;
+    text-align: center;
+}
+
+
+p::first-letter {
+    color: #1abc9c;
+    font-weight: 900;
+}
+
+.menu-links {
+    height: 160px;
+    font-size: 14px;
+    line-height: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 36px 0 110px 0;
+    float: right;
+}
+
+.link {
+    list-style: none;
+}
+
+.menu-links li {
+    float: left;
+}
+
+.menu-links li:not(:last-of-type) {
+    margin-right: 32px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0f0101;
+    margin: 0;
+}
+
+a:hover,
+.link :focus {
+    color: #1abc9c;
+}
+
+.title-products {
+    height: 168px;
+    text-transform: uppercase;
+    color: #515151;
+    font-size: 48px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 0 110px 0;
+}
+
+h2::after {
+    content: " ";
+    display: block;
+    height: 7px;
+    width: 164px;
+    background-color: #1abc9c;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+
+img {
+    height: 283px;
+    width: 255px;
+    background-color: #e9f0fd;
+    background-size: cover;
+    margin: 0;
+}
+
+.product-name {
+    height: 40px;
+    width: 255px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    margin:0;
+
+   .title-name {
+        width: 201px;
+        height: 40px;
+        color: #ffffff;
+        background-color: #323232;
+        padding-left: 14px;
+        padding-top: 12px;
+        margin: 0;
+        float: left;
+    }
+
+    .price {
+        width: 54px;
+        height: 40px;
+        background-color: #8c8c8c;
+        color: #ffffff;
+        margin: 0;
+        padding-left: 12px;
+        padding-top: 12px;
+        float: right;
+    }
+
+    .product-name :hover,
+    .product-name :focus {
+        background-color: #1abc9c;
+    }
