@@ -8,10 +8,10 @@ html {
     box-sizing: border-box;
 }
 
-header {
+.container {
     height: 160px;
     width: 1110px;
-    margin: 0 auto;
+    margin-bottom: 105px;
 }
 
 .clearfix::after {
@@ -22,13 +22,13 @@ header {
 
 .logo {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 900;
     font-size: 30px;
     line-height: 32px;
-    color: #555252;
+    color: #000000;
     text-transform: uppercase;
     margin: 0;
-    padding: 34px 0 100px 0;
+    padding-top: 34px;
     float: left;
 }
 
@@ -37,20 +37,18 @@ header {
     text-align: center;
 }
 
-
 .text-logo::first-letter {
     color: #1abc9c;
     font-weight: 900;
 }
 
 .menu-links {
-    height: 160px;
     font-size: 14px;
     line-height: 11px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     margin: 0;
-    padding: 36px 0 110px 0;
+    padding: 42px 0 107px 0;
     float: right;
 }
 
@@ -84,13 +82,16 @@ main {
 }
 
 .title-products {
-    height: 168px;
     text-transform: uppercase;
     color: #515151;
     font-size: 48px;
+    line-height: 32px;
+    font-family: "Roboto";
+    font-weight: 900;
     margin: 0;
+    margin-bottom: 130px;
     text-align: center;
-    padding: 0 0 110px 0;
+    padding: 0;
 }
 
 h2::after {
@@ -101,19 +102,30 @@ h2::after {
     background-color: #1abc9c;
     margin: 0 auto;
     margin-top: 28px;
+    /* если убрать марджин топ, тогда подчёркивание прижимается к верхнему тексту */
+    padding: 0;
 }
 
-.product {
+.products {
+    margin-bottom: 100px;
+}
+
+ul {
     font-size: 0;
+    margin: 0;
+    padding: 0;
 }
 
-.block1 {
+li {
+    margin-bottom: 30px;
     float: left;
 }
 
+li:nth-last-child(-n+4) {
+    margin-bottom: 0;
+}
+
 img {
-    height: 283px;
-    width: 255px;
     background-color: #e9f0fd;
     background-size: cover;
     margin: 0;
@@ -124,11 +136,12 @@ img {
     width: 255px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 18px;
+    line-height: 32px;
     text-transform: uppercase;
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 .title-name {
@@ -136,8 +149,8 @@ img {
     height: 40px;
     color: #ffffff;
     background-color: #323232;
+    padding: 0 auto;
     padding-left: 14px;
-    padding-top: 12px;
     margin: 0;
     float: left;
 }
@@ -147,9 +160,9 @@ img {
     height: 40px;
     background-color: #8c8c8c;
     color: #ffffff;
+    text-align: center;
     margin: 0;
-    padding-left: 12px;
-    padding-top: 12px;
+    padding: 0 auto;
     float: right;
 }
 
@@ -168,29 +181,41 @@ img {
     margin-right: 0;
 }
 
+/* .news {
+    padding-bottom: 80px;
+    margin: 0;
+} */
+
+.ul-news {
+    padding-bottom: 80px;
+}
+
 .title-latest-news {
-    height: 260px;
     box-sizing: border-box;
     text-transform: uppercase;
     color: #555252;
     font-size: 48px;
-    font-weight: bold;
     line-height: 32px;
+    font-weight: 900;
     font-family: 'Roboto', sans-serif;
-    margin: 0;
     text-align: center;
-    padding: 100px 0 115px 0;
+    padding: 0 auto;
+    margin: 0 0 100px 0;
 }
 
-.nofloat {
-    float: none;
-    display: inline-block;
+.latest-news {
+    width: 350px;
+    float: left;
+    margin-right: 30px;
+}
+
+.latest-news:last-child {
+    margin-right: 0;
 }
 
 .images-news {
-    height: 264px;
-    width: 350px;
     margin: 0;
+    margin-bottom: 14px;
     font-size: 0;
 }
 
@@ -199,9 +224,10 @@ img {
     line-height: 26px;
     color: #555252;
     font-family: 'Open Sans', sans-serif;
-    width: 350px;
     text-align: left;
-    box-sizing: border-box;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 26px;
 }
 
 .title-news::after {
@@ -211,7 +237,6 @@ img {
     width: 136px;
     background-color: #4ec6ab;
     margin-top: 13px;
-    margin-right: 0;
 }
 
 .text {
@@ -225,17 +250,20 @@ img {
     margin-bottom: 18px;
 }
 
-.read-more-button {
-    border-color: none;
+.read-more {
+    display: inline-block;
+    width: 160px;
+    height: 50px;
+    border: none;
     background-color: #4ec6ab;
     color: #ffffff;
-    padding: 18px 42px;
-    margin-bottom: 80px;
-    display: inline-block;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-size: 16px;
     line-height: 26px;
     text-transform: uppercase;
+    padding: 0 auto;
+    padding-top: 15px;
+    margin: 0;
     cursor: pointer;
 }
