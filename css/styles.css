@@ -100,10 +100,7 @@ h2::after {
     height: 7px;
     width: 164px;
     background-color: #1abc9c;
-    margin: 0 auto;
-    margin-top: 28px;
-    /* если убрать марджин топ, тогда подчёркивание прижимается к верхнему тексту */
-    padding: 0;
+    margin: 28px auto 0;
 }
 
 .products {
@@ -149,7 +146,6 @@ img {
     height: 40px;
     color: #ffffff;
     background-color: #323232;
-    padding: 0 auto;
     padding-left: 14px;
     margin: 0;
     float: left;
@@ -162,7 +158,6 @@ img {
     color: #ffffff;
     text-align: center;
     margin: 0;
-    padding: 0 auto;
     float: right;
 }
 
@@ -181,11 +176,6 @@ img {
     margin-right: 0;
 }
 
-/* .news {
-    padding-bottom: 80px;
-    margin: 0;
-} */
-
 .ul-news {
     padding-bottom: 80px;
 }
@@ -199,7 +189,6 @@ img {
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    padding: 0 auto;
     margin: 0 0 100px 0;
 }
 
@@ -262,7 +251,6 @@ img {
     font-size: 16px;
     line-height: 26px;
     text-transform: uppercase;
-    padding: 0 auto;
     padding-top: 15px;
     margin: 0;
     cursor: pointer;
